@@ -648,7 +648,7 @@ const STORAGE_PREFIX = 'pattern-log-builder:';
 // Put your Firebase Realtime Database URL here (see README) to make templates + part names shared by everyone
 // who opens the site. Leave it empty and the app behaves exactly as before: data stays in each person's browser.
 // e.g. 'https://my-project-default-rtdb.asia-southeast1.firebasedatabase.app/pattern-log'
-const SHARED_DB_URL = '';
+const SHARED_DB_URL = 'https://pattern-log-builder-default-rtdb.asia-southeast1.firebasedatabase.app/pattern-log';
 const SHARED_KEYS = ['templates-data', 'starters-seeded-v1']; // the personal log history stays on each device
 const sharedOn = () => !!SHARED_DB_URL;
 const isShared = (key) => sharedOn() && SHARED_KEYS.includes(key);
